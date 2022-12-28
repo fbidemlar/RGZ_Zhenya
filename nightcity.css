@@ -1,0 +1,117 @@
+/* заголовок */
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    background-color: #101112;
+
+    height: 1000px;
+}
+
+h2.title{
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+    position: relative;
+}
+h2.title:after{
+    content: "";
+    position: absolute;
+    width: 610px;
+    height: 3px;
+    background-color: #ffffff;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* общие настройки */
+* {
+    box-sizing: border-box;
+    background-color: #16171a;
+    text-align: center;
+    margin: 2;
+    padding: 2;
+}
+/*большие изображения*/
+.mySlides {
+    display: none;
+}
+/*кнопки далее и назад*/
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 60px;
+    margin-top: -50px;
+    color:hwb(271 2% 0%);
+    font-weight: bold;
+    font-size: 70px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    display: none;
+}
+.column >  img{
+    height: 20%;
+}
+.column >  img:hover{
+    opacity: 0.6;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 0;
+}
+/*выделение стрелок при наведении*/
+.prev:hover,
+.next:hover {
+    background-color: #000000;
+}
+
+/*номер картинки*/
+.numbertext {
+    color: hwb(271 2% 0%);
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/*кнопка начать и остановить*/
+button {
+    background-color: FFF;
+    font-size: 2.2em;
+    color: #ffffff;
+    border-radius: 2px;
+    display: none;
+    margin: 5px;
+}
+/*колонка*/
+.column {
+    float: left;
+    width: 20%;
+}
+/*закрытие*/
+span {
+    color: hwb(271 2% 0%);
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+    float: right;
+}
+/*ползунок*/
+input[type=range] {
+    width: 200px;
+    height: 7px;
+    display: block;
+}
+
+/*анимирование изображения*/
+img:hover {
+    opacity: 5;
+}
